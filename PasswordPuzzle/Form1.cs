@@ -50,6 +50,7 @@ namespace PasswordPuzzle
             label.Text = question.Clue;
             label.Width = 500;
             label.Height = 60;
+            label.AutoSize = true;
             label.Location = new Point(10, yLocation);
             label.Font = new Font("Ink Free", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label.ForeColor = GetRandomColour();
