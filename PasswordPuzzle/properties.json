@@ -1,0 +1,27 @@
+{
+    "title" : "Bday gifts giveaway!",
+    "subtitle" : "You have to decode the clues and get the passwords to move to the next gift :)",
+    "congrats" : "Congratumalations \nyou got everything you greedy beach",
+    "questions" : [
+        {
+            "clue" : "Your work gear is putting a lot of pressure on me",
+            "pw" : ""
+        },
+        {
+            "clue" : "You don't have chairs in the kitchen, perhaps you should use one there",
+            "pw" : ""
+        },
+        {
+            "clue" : "What sound does the animal VACA do?",
+            "pw" : ""
+        },
+        {
+            "clue" : "Where all the toots get together",
+            "pw" : ""
+        },
+        {
+            "clue" : "lalalal",
+            "pw" : ""
+        }
+    ]
+}

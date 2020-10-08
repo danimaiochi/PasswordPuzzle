@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace PasswordPuzzle
 {
@@ -21,12 +18,13 @@ namespace PasswordPuzzle
         public Form1()
         {
             InitializeComponent();
-            var properties = new Properties();
-            properties.Initialise();
+            var props = File.ReadAllText("properties.json");
+            var properties = JsonConvert.DeserializeObject<Properties>(props);
             lblTitle.Text = properties.Title;
             lblSubtitle.Text = properties.Subtitle;
             lblCongrats.Text = properties.Congrats;
             _questions = properties.Questions;
+
             if (_questions.Count > 0)
             {
                 InitialiseQuestions();
